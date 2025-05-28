@@ -28,7 +28,7 @@ YapayZekaTemelleri/
 
 ## 📸 Ekran Görüntüleri
 
-... Ekran görüntüleri eklenecektir..
+... Ekran görüntüleri eklenecektir...
 
 ## 📦 Kurulum ve Çalıştırma
 
@@ -37,14 +37,15 @@ YapayZekaTemelleri/
    git clone https://github.com/bhmberkan/YapayZekaTemelleri.git
     ```
 Visual Studio ile açın:
-
+  ```bash
 YapayZekaTemelleri.sln dosyasını çift tıklayarak Visual Studio'da açın.
-
+```
 2. Gerekli NuGet paketlerini yükleyin:
-
+  ```bash
 Sağ tıklayın → "Restore NuGet Packages"
 
 İlgili projeyi Set as Startup Project yaparak çalıştırın.
+```
 
 ## 🤖 Katkıda Bulunmak
 Katkıda bulunmak isterseniz:
