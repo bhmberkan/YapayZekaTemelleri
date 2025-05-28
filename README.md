@@ -20,7 +20,6 @@ Bu proje, C# dili kullanılarak yapay zeka temellerine giriş yapmak isteyenler 
 YapayZekaTemelleri/
 ├── VoiceAssistant/ # Sesli asistan modülü
 ├── ObjectDetection/ # Görsel nesne tanıma denemeleri
-├── MachineLearning/ # Makine öğrenmesi algoritmaları
 ├── YapayZekaTemelleri.sln # Visual Studio çözüm dosyası
 └── README.md # Bu döküman
 ```
