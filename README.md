@@ -5,7 +5,6 @@ Bu proje, C# dili kullanılarak yapay zeka temellerine giriş yapmak isteyenler 
 ## 🚀 Özellikler
 
 - 📢 Basit bir sesli asistan sistemi  
-- 🧠 Temel makine öğrenmesi algoritmaları  
 - 🖼️ Görsel nesne tanıma giriş uygulamaları  
 - 🔧 C# ile yapay zeka temellerini uygulamalı öğrenme imkânı
 
