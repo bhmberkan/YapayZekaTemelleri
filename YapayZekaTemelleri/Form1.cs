@@ -20,9 +20,35 @@ namespace YapayZekaTemelleri
 
         public void ProductList()
         {
-            var products = db.tblproduct.ToList();
+            var products = db.tblproduct.Select(x=> new {
+            
+                x.NAME,
+                x.BRAND,
+                x.STOCK,
+                x.BUYPRİCE,
+                x.SELLPRİCE,
+                x.CATEGORY,
+                x.DATEADD,
+                x.PRODUCTCASE
+            }).ToList();
             dataGridView1.DataSource = products;
         }
+
+        public void AddProduct()
+        {
+            tblproduct t = new tblproduct();
+            t.NAME = textBox1.Text;
+            t.BRAND = textBox2.Text;
+            t.BUYPRİCE = decimal.Parse(textBox4.Text);
+            t.SELLPRİCE = decimal.Parse(textBox5.Text);
+            t.STOCK = short.Parse(textBox3.Text);
+            t.PRODUCTCASE = true;
+            t.DATEADD = DateTime.Parse(maskedTextBox1.Text);
+            t.CATEGORY = textBox6.Text;
+            db.tblproduct.Add(t);
+            db.SaveChanges();
+        }
+
         // bu şekilde çalıştırınca çalışıyor ama enabled foksiyonunu çalıştırınca çalışmıyor garip.
         void enabled()
         {
@@ -63,15 +89,22 @@ namespace YapayZekaTemelleri
             sr.LoadGrammar(g);
             try
             {
-                richTextBox1.Text = " lütfen konuşun ";
+                richTextBox1.Text = "Lütfen konuşun...";
                 sr.SetInputToDefaultAudioDevice();
                 RecognitionResult res = sr.Recognize();
 
-                richTextBox1.Text = res.Text;
+                if (res != null)
+                {
+                    richTextBox1.Text = res.Text;
+                }
+                else
+                {
+                    richTextBox1.Text = "Anlaşılamadı, lütfen tekrar deneyin.";
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                richTextBox1.Text = "Tekrar deneyin";
+                richTextBox1.Text = "Bir hata oluştu: " + ex.Message;
             }
         }
 
@@ -147,20 +180,13 @@ namespace YapayZekaTemelleri
            
             if (richTextBox1.Text == "Add" || richTextBox1.Text == "Add to" || richTextBox1.Text == "Add the")
             {
-                tblproduct t = new tblproduct();
-                t.NAME = textBox1.Text;
-                t.BRAND = textBox2.Text;
-                t.BUYPRİCE =decimal.Parse( textBox4.Text);
-                t.SELLPRİCE =decimal.Parse( textBox5.Text);
-                t.STOCK = short.Parse(textBox3.Text);
-                t.PRODUCTCASE = true;
-                t.DATEADD = DateTime.Parse(maskedTextBox1.Text);
-                t.CATEGORY = textBox6.Text;
-                db.tblproduct.Add(t);
-                db.SaveChanges();
+
+                AddProduct();
 
                 label10.Text = "Products saved in database";
                 ProductList();
+
+                enabled();
             }
 
 
@@ -193,7 +219,7 @@ namespace YapayZekaTemelleri
             }
 
 
-            if (richTextBox1.Text == "Sell price")
+            if (richTextBox1.Text == "Sell price" || richTextBox1.Text == "Sell")
             {
                 textBox5.Focus();
                 textBox5.BackColor = Color.Yellow;
@@ -262,12 +288,30 @@ namespace YapayZekaTemelleri
             SpVoice ses = new SpVoice();
             ses.Speak(label10.Text);
         }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
             enabled();
             colormetod();
             //timer1.Start();
+
+            this.BackColor = Color.FromArgb(30, 30, 30);
+
+            // Örnek: Bir buton stili
+            StyleHelper.ApplyButtonStyles(this);
+
+            // Örnek: Label stili
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            StyleHelper.ApplyLabelStyles(this);
+
+            // Örnek: DataGridView stili
+            dataGridView1.BackgroundColor = Color.FromArgb(45, 45, 48);
+            dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+            dataGridView1.DefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 122, 204);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -294,6 +338,18 @@ namespace YapayZekaTemelleri
             Forms.FrmObjDet fr = new Forms.FrmObjDet();
             fr.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Forms.FrmAforge1 fr = new Forms.FrmAforge1();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

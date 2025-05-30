@@ -106,7 +106,7 @@ namespace YapayZekaTemelleri
             "Passive"});
             this.comboBox1.Location = new System.Drawing.Point(123, 384);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 33);
+            this.comboBox1.Size = new System.Drawing.Size(160, 27);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.BackColorChanged += new System.EventHandler(this.comboBox1_BackColorChanged);
             // 
@@ -115,7 +115,7 @@ namespace YapayZekaTemelleri
             this.maskedTextBox1.Location = new System.Drawing.Point(123, 337);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(160, 31);
+            this.maskedTextBox1.Size = new System.Drawing.Size(160, 27);
             this.maskedTextBox1.TabIndex = 17;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             this.maskedTextBox1.BackColorChanged += new System.EventHandler(this.maskedTextBox1_BackColorChanged);
@@ -123,18 +123,18 @@ namespace YapayZekaTemelleri
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(52, 384);
+            this.label9.Location = new System.Drawing.Point(70, 387);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 25);
+            this.label9.Size = new System.Drawing.Size(47, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Case :";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(53, 337);
+            this.label8.Location = new System.Drawing.Point(71, 340);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 25);
+            this.label8.Size = new System.Drawing.Size(48, 20);
             this.label8.TabIndex = 13;
             this.label8.Text = "Date :";
             // 
@@ -142,15 +142,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox6.Location = new System.Drawing.Point(123, 294);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(160, 31);
+            this.textBox6.Size = new System.Drawing.Size(160, 27);
             this.textBox6.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 300);
+            this.label7.Location = new System.Drawing.Point(34, 303);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 25);
+            this.label7.Size = new System.Drawing.Size(76, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "Category :";
             // 
@@ -158,15 +158,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox5.Location = new System.Drawing.Point(123, 257);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 31);
+            this.textBox5.Size = new System.Drawing.Size(160, 27);
             this.textBox5.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 263);
+            this.label6.Location = new System.Drawing.Point(33, 266);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 25);
+            this.label6.Size = new System.Drawing.Size(76, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Sell Price :";
             // 
@@ -174,15 +174,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox4.Location = new System.Drawing.Point(123, 220);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 31);
+            this.textBox4.Size = new System.Drawing.Size(160, 27);
             this.textBox4.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 226);
+            this.label5.Location = new System.Drawing.Point(32, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 25);
+            this.label5.Size = new System.Drawing.Size(76, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Buy Price :";
             // 
@@ -190,15 +190,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox3.Location = new System.Drawing.Point(123, 179);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 31);
+            this.textBox3.Size = new System.Drawing.Size(160, 27);
             this.textBox3.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 185);
+            this.label4.Location = new System.Drawing.Point(66, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 25);
+            this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Stock :";
             // 
@@ -206,15 +206,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox2.Location = new System.Drawing.Point(123, 135);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 31);
+            this.textBox2.Size = new System.Drawing.Size(160, 27);
             this.textBox2.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 141);
+            this.label3.Location = new System.Drawing.Point(60, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Brand :";
             // 
@@ -222,15 +222,15 @@ namespace YapayZekaTemelleri
             // 
             this.textBox1.Location = new System.Drawing.Point(123, 95);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 31);
+            this.textBox1.Size = new System.Drawing.Size(160, 27);
             this.textBox1.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 101);
+            this.label2.Location = new System.Drawing.Point(60, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 25);
+            this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name :";
             // 
@@ -239,7 +239,7 @@ namespace YapayZekaTemelleri
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 25);
+            this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "PRODUCT DETAİLS";
             // 
@@ -293,8 +293,9 @@ namespace YapayZekaTemelleri
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 45);
             this.button3.TabIndex = 2;
-            this.button3.Text = "İmage";
+            this.button3.Text = "image";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -304,6 +305,7 @@ namespace YapayZekaTemelleri
             this.button2.TabIndex = 1;
             this.button2.Text = "Camera Feel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnproductadd
             // 
@@ -326,6 +328,7 @@ namespace YapayZekaTemelleri
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -367,7 +370,7 @@ namespace YapayZekaTemelleri
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(424, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 25);
+            this.label10.Size = new System.Drawing.Size(86, 20);
             this.label10.TabIndex = 1;
             this.label10.Text = "Plase Wait...";
             this.label10.TextChanged += new System.EventHandler(this.label10_TextChanged);
@@ -387,7 +390,7 @@ namespace YapayZekaTemelleri
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1109, 618);
             this.Controls.Add(this.panel5);
@@ -399,7 +402,7 @@ namespace YapayZekaTemelleri
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Yapay Zeka Temelleri";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -415,6 +418,7 @@ namespace YapayZekaTemelleri
         }
 
         #endregion
+
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
