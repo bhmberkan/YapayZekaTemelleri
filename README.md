@@ -2,6 +2,12 @@
 
 Bu proje, C# dili kullanılarak yapay zeka temellerine giriş yapmak isteyenler için oluşturulmuştur. İçerisinde sesli asistan, nesne tanıma ve makine öğrenmesi gibi temel konuların örnek uygulamaları yer almaktadır.
 
+
+## 📌 Kullanım
+Sepeak tuşuna basılır ve ilgili alanın ismi söylenir. Örn "Buy price" alanı olsun. Bu alanın ismini "Buy Price" , "Buy" , "By" ,  Şeklinde  herhangi birini söyleyerek beyaz alana yazdırılması sağlanır ve ilgili alan artık kullanılabilir hale gelir. Daha sonra söylediğiniz kelime ise ilgili alana yazılır örn "one thousand eight hundred" derseniz ilgili alana 1800 yazılacaktır. Date alanı için "Date" demeniz yeterli ilgili alana bu günün tarihi eklenecektir. "Add" diyerek doldurduğunuz alanı veri tabanına ekleyebilirsiniz. "List of products" , "Products lists" diyerek veri tabanımızda ekli olan ürünleri görebilirsiniz. Camera ve objDec alanları için şu anlık camera bilgisayarımıza bağlı olan kameraları görüp kullanıma sunuyor.(geliştirme aşamasında) , object detection alanında ise nesnelerin tespit edilmesi ile ilgili bir çalışma yapmayı düşünüyorum. Proje şu anlık bu şekilde Destek olmak için yıldız atabilirsiniz.
+
+
+
 ## 🚀 Özellikler
 
 - 📢 Basit bir sesli asistan sistemi  
