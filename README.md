@@ -26,7 +26,14 @@ YapayZekaTemelleri/
 
 ## 📸 Ekran Görüntüleri
 
-... Ekran görüntüleri eklenecektir...
+<br>
+
+![image](https://github.com/user-attachments/assets/9118ce7c-9ddf-473e-bca4-43d5489bb59b)
+<br>
+![image](https://github.com/user-attachments/assets/f21cd433-54ab-44a8-9e0a-94e5ca7dc81c)
+<br>
+![image](https://github.com/user-attachments/assets/53f8bd9e-2a83-4fd5-bb79-ffb6949b4c46)
+<br>
 
 ## 📦 Kurulum ve Çalıştırma
 
