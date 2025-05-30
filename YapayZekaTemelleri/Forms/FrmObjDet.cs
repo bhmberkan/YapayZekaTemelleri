@@ -45,7 +45,16 @@ namespace YapayZekaTemelleri.Forms
 
         private void FrmObjDet_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(30, 30, 30);
+            StyleHelper.ApplyButtonStyles(this);
+            StyleHelper.ApplyLabelStyles(this);
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 fr = new Form1();
+            fr.Show();
+            this.Close();
         }
     }
 }
